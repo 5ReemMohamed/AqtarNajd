@@ -18,7 +18,15 @@ html[dir="ltr"] h5,
 html[dir="ltr"] h6{
    font-family: "Playfair Display", serif;
 }
+html[dir="rtl"] input::placeholder {
+  direction: rtl;
+  text-align: right;
+}
 
+html[dir="ltr"] input::placeholder {
+  direction: ltr;
+  text-align: left;
+}
  html {
   scroll-behavior: smooth;
   scroll-padding-top: 95px;
@@ -149,7 +157,7 @@ transform: translateY(-7px);
 }
 .navbar-toggler:focus{
   border: none !important;
-  outline: none !;
+  outline: none !important;
   box-shadow: none !important;
 }
 h1{
@@ -469,13 +477,13 @@ footer .gmt-logo{
     color: rgb(64, 64, 64);
 }
 .services{
-    background-image: url(../images/servicesHeader.avif);
+    background-image: url(../images/servicesHeader.jpg);
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
 }
 .services .card{
-        backdrop-filter: none;
+    backdrop-filter: none;
     background-color: rgba(127, 127, 127, 0.22) !important;
     color: white;
     height: 100%;
